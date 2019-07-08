@@ -85,14 +85,14 @@ CREATE TABLE oura_readiness (
 	-- There is one readiness row per sleep event.
 	CONSTRAINT readiness_id PRIMARY KEY (summary_date, period_id),
 
-	period_id 				SMALLINT,
-	score_activity_balance 	SMALLINT,
-	score_previous_day 		SMALLINT,
-	score_previous_night 	SMALLINT,
+	period_id		SMALLINT,
+	score_activity_balance	SMALLINT,
+	score_previous_day	SMALLINT,
+	score_previous_night	SMALLINT,
 	score_recovery_index 	SMALLINT,
-	score_resting_hr 		SMALLINT,
-	score_sleep_balance 	SMALLINT,
-	score_temperature 		SMALLINT,
-	summary_date 			DATE,
-	score 					SMALLINT
+	score_resting_hr	SMALLINT,
+	score_sleep_balance	SMALLINT,
+	score_temperature	SMALLINT,
+	summary_date		DATE,
+	score			SMALLINT
 );
