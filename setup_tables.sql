@@ -1,6 +1,6 @@
 CREATE TABLE oura_sleep (
-    -- According to the docs, each sleep event is uniquely identified by period ID per summary date.
-	CONSTRAINT sleep_id 	    PRIMARY KEY (summary_date, period_id),
+	-- According to the docs, each sleep event is uniquely identified by period ID per summary date.
+	CONSTRAINT sleep_id			PRIMARY KEY (summary_date, period_id),
 
 	awake						INTEGER,
 	bedtime_end					TIMESTAMPTZ,
@@ -60,25 +60,25 @@ CREATE TABLE oura_activity (
 	score 						SMALLINT,
 	steps 						INTEGER,
 	timezone 					SMALLINT,
-    average_met 				FLOAT,
-    class_5min 					SMALLINT[],
-    met_1min 					FLOAT[],
-    met_min_high 				SMALLINT,
-    met_min_low 				SMALLINT,
-    met_min_medium 				SMALLINT,
-    met_min_medium_plus 		SMALLINT,
-    score_meet_daily_targets 	SMALLINT,
-    score_move_every_hour 		SMALLINT,
-    score_recovery_time 		SMALLINT,
-    score_stay_active 			SMALLINT,
-    score_training_frequency 	SMALLINT,
-    score_training_volume 		SMALLINT,
-    target_calories				SMALLINT,
-    target_km 					SMALLINT,
-    target_miles 				SMALLINT,
-    to_target_km 				FLOAT,
-    to_target_miles 			FLOAT,
-    total 						SMALLINT
+	average_met 				FLOAT,
+	class_5min 					SMALLINT[],
+	met_1min 					FLOAT[],
+	met_min_high 				SMALLINT,
+	met_min_low 				SMALLINT,
+	met_min_medium 				SMALLINT,
+	met_min_medium_plus 		SMALLINT,
+	score_meet_daily_targets 	SMALLINT,
+	score_move_every_hour 		SMALLINT,
+	score_recovery_time 		SMALLINT,
+	score_stay_active 			SMALLINT,
+	score_training_frequency 	SMALLINT,
+	score_training_volume 		SMALLINT,
+	target_calories				SMALLINT,
+	target_km 					SMALLINT,
+	target_miles 				SMALLINT,
+	to_target_km 				FLOAT,
+	to_target_miles 			FLOAT,
+	total 						SMALLINT
 );
 
 CREATE TABLE oura_readiness (
@@ -94,5 +94,5 @@ CREATE TABLE oura_readiness (
 	score_sleep_balance 	SMALLINT,
 	score_temperature 		SMALLINT,
 	summary_date 			DATE,
-    score 					SMALLINT
+	score 					SMALLINT
 );
