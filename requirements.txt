@@ -2,7 +2,7 @@ certifi==2019.6.16
 chardet==3.0.4
 html5lib==1.0.1
 idna==2.8
-mechanize==0.4.2
+mechanize==0.4.6
 psycopg2==2.8.3
 python-dateutil==2.8.0
 rauth==0.7.3
